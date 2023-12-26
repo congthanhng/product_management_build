@@ -123734,7 +123734,7 @@ $1(a){},
 $S:20}
 A.mM.prototype={
 A(a){var s=this,r=s.f
-r=B.c.p(r,"http://")||B.c.p(r,"https://")?r:"http://localhost:8080/images/"+r
+r=B.c.p(r,"http://")||B.c.p(r,"https://")?r:"http://demo2.gmazi.com/images/"+r
 return A.a22(r,new A.aDI(s),s.c,s.e,s.d)}}
 A.aDI.prototype={
 $3(a,b,c){var s=this.a,r=s.r
@@ -126563,7 +126563,7 @@ case 1:return A.z(q,r)}})
 return A.A($async$S5,r)}}
 A.aIL.prototype={
 $1(a){var s=null
-return new A.ob(s,"http://localhost:8080/images/"+a,s,s,s)},
+return new A.ob(s,"http://demo2.gmazi.com/images/"+a,s,s,s)},
 $S:773}
 A.aIM.prototype={
 $1(a){var s=this.a.k1
@@ -142657,7 +142657,7 @@ return A.bye(!1,q,q,q,q,"/",q,q,q,!1,q,!0,q,!1,new A.af0(new A.aNw(a6,A.bK3(),5)
 s($,"bKP","jQ",()=>{var q,p=A.bfX(),o=new A.a2m(A.a([B.Se],A.a9("u<jh?>")))
 p=new A.ar3(p,o,A.bfX(),new A.arC(A.bHd()),!1)
 p.ajI(null)
-q=A.bi_("http://localhost:8080/",A.ae(["Content-Type","application/json"],t.N,t.z))
+q=A.bi_("http://demo2.gmazi.com/",A.ae(["Content-Type","application/json"],t.N,t.z))
 p.cY$=q
 o.E(o,A.a([new A.LW(!0,!0,!0)],A.a9("u<jh>")))
 return p})
