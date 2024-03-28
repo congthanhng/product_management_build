@@ -1,11 +1,11 @@
 {
-    "name": "post_management",
-    "short_name": "post_management",
+    "name": "Post Management Application",
+    "short_name": "Post Management App",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "Đăng tin của bạn, tìm tin bạn muốn.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
