@@ -9,8 +9,19 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"235db911ba279722f5e685f38b0ed30fa7e8570a","builds":[{"compileTarget":"dart2js","renderer":"auto","mainJsPath":"main.dart.js"}]};
 
 
+const searchParams = new URLSearchParams(window.location.search);
+const renderer = searchParams.get('renderer');
+const userConfig = renderer ? {'renderer': renderer} : {};
+
 _flutter.loader.load({
+  config: userConfig,
   serviceWorkerSettings: {
-    serviceWorkerVersion: "3140816148"
-  }
+    serviceWorkerVersion: "3596678264",
+  },
+  onEntrypointLoaded: async function(engineInitializer) {
+      const appRunner = await engineInitializer.initializeEngine();
+      const loaderContent = document.querySelector('#loader-content')
+      loaderContent.style.opacity = "0";
+      await appRunner.runApp();
+    }
 });
