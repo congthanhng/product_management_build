@@ -16,10 +16,14 @@ const userConfig = renderer ? {'renderer': renderer} : {};
 _flutter.loader.load({
   config: userConfig,
   serviceWorkerSettings: {
-    serviceWorkerVersion: "3596678264",
+    serviceWorkerVersion: "1976729650",
   },
   onEntrypointLoaded: async function(engineInitializer) {
-      const appRunner = await engineInitializer.initializeEngine();
+      const appRunner = await engineInitializer.initializeEngine(
+        {
+            renderer: "html"
+        }
+      );
       const loaderContent = document.querySelector('#loader-content')
       loaderContent.style.opacity = "0";
       await appRunner.runApp();
