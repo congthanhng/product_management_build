@@ -16,7 +16,7 @@ const userConfig = renderer ? {'renderer': renderer} : {};
 _flutter.loader.load({
   config: userConfig,
   serviceWorkerSettings: {
-    serviceWorkerVersion: "577471065",
+    serviceWorkerVersion: "3791575353",
   },
   onEntrypointLoaded: async function(engineInitializer) {
       const appRunner = await engineInitializer.initializeEngine(
